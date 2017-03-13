@@ -1,0 +1,206 @@
+body{
+  overflow: hidden;
+  margin: 0;
+}
+
+#screen{
+    position: relative;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    height: 58vw;
+    width: 100vw;
+}
+
+#table{
+    position: absolute;
+    top:15vw;
+    left:15vw;
+}
+
+#flying_card{
+  background-image: url(images/poker_back.png);
+  background-size: cover;
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  left: -10vw;
+  top: 27vw;
+}
+
+#messages{
+  position: absolute;
+  background-image: url(images/board.png);
+  background-size:cover;
+  left: -17vw;
+  top: 10.5vw;
+  width: 15vw;
+  height: 12vw;
+  padding-top: 4vw;
+  padding-left: 4vw;
+}
+
+#message{
+  display: block;
+  transform: rotate(-7deg);
+  font-family: 'Gloria Hallelujah',cursive;
+  color:black;
+  font-size: 1.5vw;
+}
+
+#dealer{
+  position: absolute;
+  background-image: url(images/dealer.png);
+  background-size:cover;
+  color:black;
+  left: -14vw;
+  top: 23vw;
+  width: 20vw;
+  height: 20vw;
+}
+
+.hand{
+    width: 40vw;
+    height: 20vw;
+}
+
+#dealer-hand{
+  position: absolute;
+  left:5vw;
+  top:8vw;
+}
+
+#player-hand{
+  position: absolute;
+  left: 44vw;
+  top: 16vw;
+}
+
+.buttons{
+    position: absolute;
+    left: 30vw;
+    top: 30vw;
+    margin-top: 2vw;
+    width: 60vw;
+}
+
+.buttons button{
+  background: none;
+  border: 3px solid #AE1F1D;
+  width: 7vw;
+  height: 4vw;
+  border-radius: 40%;
+  background-color: #6F5652;
+  color: white;
+}
+
+#bet_button_div{
+  position:absolute;
+  left:29vw;
+  top: 37vw;
+  width: 60vw;
+}
+
+#bet_button_div button{
+  background: none;
+  width: 6vw;
+  height: 4vw;
+  border: 3px solid #AE1F1D;
+  border-radius: 40%;
+  color: #AE1F1D;
+  background-color: #DDDDDD;
+}
+
+#show_bet{
+  position:absolute;
+  left: 67vw;
+  top: 32vw;
+  color:black;
+  width: 13vw;
+  height: 8.5vw;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2vw;
+  color: #AE1F1D;
+  border: 3px solid #AE1F1D;
+  border-radius: 40%;
+  background-color: white;
+  padding-left: 1vw;
+}
+
+#table label{
+    color:black;
+}
+
+#dealer_label_div{
+  position: absolute;
+  margin-top: 2vw;
+  top:-1vw;
+  left:0vw;
+  width: 15vw;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.5vw;
+  border: 3px solid #AE1F1D;
+  color: #AE1F1D;
+  border-radius: 40%;
+  padding-left: 2vw;
+  padding-bottom: 0.5vw;
+  transform: rotate(-7deg);
+}
+
+#player_label_div{
+  position: absolute;
+  margin-top: 2vw;
+  left: 57vw;
+  top: 2vw;
+  width: 15vw;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.5vw;
+  border: 3px solid #AE1F1D;
+  color: #AE1F1D;
+  border-radius: 40%;
+  padding-left: 2vw;
+  padding-bottom: 0.5vw;
+  transform: rotate(15deg);
+}
+
+.chip{
+  position: absolute;
+  display: block;
+  width: 4vw;
+  left: 15vw;
+  top: 0vw;
+  visibility: hidden;
+}
+
+.chip_visible{
+  visibility: visible;
+}
+
+#dealer_label{
+    padding-left: 1vw;
+}
+#player_label{
+    padding-left: 1vw;
+}
+.card{
+    height: 6vw;
+    padding: 1vw 0;
+}
+
+.disable{
+  border: 3px solid grey !important;
+  pointer-events: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+.buttons button:active{
+  width: 6.75vw;
+  height: 3.75vw;
+}
+
+#bet_button_div button:active{
+  width: 5.75vw;
+  height: 3.75vw;
+}

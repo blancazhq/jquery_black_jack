@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Black Jack</title>
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <link href = 'style.css' rel = 'stylesheet'/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script src = 'https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js'></script>
+        <script src = 'jquery.js'></script>
+        <script src = 'script.js'></script>
+    </head>
+    <body>
+        <div id="screen" >
+            <div id="table">
+                <div id="bet_div">
+                    <div id="show_bet">
+                        <p>Bet is $<span id="bet">0</span></p>
+                    </div>
+                    <div id="bet_button_div">
+                        <button id="add_5" class="bet_button">+$5</button>
+                        <button id="add_10" class="bet_button">+$10</button>
+                        <button id="add_25" class="bet_button">+$25</button>
+                        <button id="add_50" class="bet_button">+$50</button>
+                        <button id="add_100" class="bet_button">+$100</button>
+                        <button id="add_500" class="bet_button">+$500</button>
+                    </div>
+                </div>
+                <div id="messages"><span id='message'></span></div>
+                <div id="dealer"></div>
+                <div id="dealer_label_div">
+                    <label id="dealer_label">Dealer point: </label>
+                    <label id="dealer-points" class="points">0 </label><br>
+                    <label id="dealer_money_label">Dealer has $</label>
+                    <label id="dealer-money" class="money"></label>
+                    <img src="images/chip.png" id ="chip1" class="chip">
+                </div>
+                <div id="dealer-hand" class="hand">
+                </div>
+                <div id="player_label_div">
+                    <label id="player_label">Player point: </label>
+                    <label id="player-points" class="points">0</label><br>
+                    <label id="player_money_label">Player has $</label>
+                    <label id="player-money" class="money"></label>
+                    <img src="images/chip.png" id ="chip2" class="chip">
+                </div>
+                <div id="player-hand" class="hand">
+                </div>
+                <div class="buttons">
+                    <button id="deal-button">Deal</button>
+                    <button id="hit-button">Hit</button>
+                    <button id="stand-button">Stand</button>
+                    <button id="newgame-button">New Game</button>
+                    <button id="reset-button">Reset</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
