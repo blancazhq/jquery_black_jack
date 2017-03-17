@@ -249,6 +249,8 @@ $(document).ready(function(){
         }
     }
 
+
+
     $('#add_5').on('click', function(){
       if(player_money>=(bet+5)){
         bet += 5;
